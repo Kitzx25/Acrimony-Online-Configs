@@ -8,8 +8,8 @@ Setting:Killaura:Range:3.25
 Setting:Killaura:Rotation range:6.0
 Setting:Killaura:Raycast:Disabled
 Setting:Killaura:Attack delay mode:APS
-Setting:Killaura:Min APS:11
-Setting:Killaura:Max APS:12
+Setting:Killaura:Min APS:20
+Setting:Killaura:Max APS:20
 Setting:Killaura:Attack delay:2
 Setting:Killaura:Fail rate:0
 Setting:Killaura:Hurt time:10
@@ -34,7 +34,7 @@ Setting:Killaura:Invisibles:false
 Setting:Killaura:Attack dead:false
 Setting:Killaura:TargetESP:BOX
 State:Velocity:true
-Setting:Velocity:Mode:Ignore horizontal
+Setting:Velocity:Mode:Hypixel
 Setting:Velocity:Horizontal:0
 Setting:Velocity:Vertical:100
 Setting:Velocity:Delay:1
@@ -96,7 +96,7 @@ Setting:Speed:Damage Boost:true
 Setting:Speed:Watchdog Mode:Strafeless
 Setting:Speed:Fast:false
 Setting:Speed:Mult:1.24
-Setting:Speed:Speed pot mult:1.24
+Setting:Speed:Speed pot mult:1.165
 Setting:Speed:Attribute speed offground:0.023
 Setting:Speed:All directions sprint:true
 Setting:Speed:Min hurttime:10
@@ -138,7 +138,7 @@ Setting:Chest Stealer:Delay:1
 Setting:Chest Stealer:Filter:true
 Setting:Chest Stealer:Autoclose:true
 Setting:Chest Stealer:Gui detect:true
-Setting:Chest Stealer:Silent:true
+Setting:Chest Stealer:Silent:false
 State:Inventory Manager:true
 Setting:Inventory Manager:Delay:1
 Setting:Inventory Manager:Sword slot:0
@@ -149,18 +149,18 @@ Setting:Inventory Manager:Block stack slot:1
 Setting:Inventory Manager:Golden apples slot:5
 State:Nofall:false
 Setting:Nofall:Mode:Noground
-State:Antivoid:false
+State:Antivoid:true
 Setting:Antivoid:Mode:Blink
 Setting:Antivoid:Stop horizontal move:true
 Setting:Antivoid:Bounce motion:1.5
-Setting:Antivoid:Min fall dist:3.5
+Setting:Antivoid:Min fall dist:3.0
 State:Timer:false
 Setting:Timer:Speed:1.1
 State:Fastplace:false
 Setting:Fastplace:Delay:Every tick
 State:AutoTool:true
 Setting:AutoTool:Item spoof:true
-State:SpeedMine:false
+State:SpeedMine:true
 Setting:SpeedMine:speed:1.2
 State:Scaffold:false
 Setting:Scaffold:Mode:Hypixel
@@ -274,7 +274,7 @@ State:HUD:true
 Setting:HUD:Pos X:15.0
 Setting:HUD:Pos Y:8.0
 Setting:HUD:Client WaterMark:true
-Setting:HUD:Mark Mode:New mark
+Setting:HUD:Mark Mode:Old mark
 Setting:HUD:Water CFont:SfPro
 Setting:HUD:Client ArrayList:true
 Setting:HUD:Array Mode:Simple
@@ -293,25 +293,25 @@ Setting:HUD:Balance:true
 Setting:HUD:Blur Background:false
 Setting:HUD:Nothifications:true
 Setting:HUD:Enable Noti:true
-Setting:HUD:notification mode:Blur
-Setting:HUD:Toggle module Sound:true
-Setting:HUD:Misc setting:true
+Setting:HUD:notification mode:Outline
+Setting:HUD:Toggle module Sound:false
+Setting:HUD:Misc setting:false
 State:Color theme:false
 Setting:Color theme:Color:Red
 Setting:Color theme:ColorSpeed:1830
 Setting:Color theme:Blooms Radius:5
 State:ClickGUI:false
 Setting:ClickGUI:Mode:Dropdown
-Setting:ClickGUI:Box on hover:false
-Setting:ClickGUI:Box on settings:false
+Setting:ClickGUI:Box on hover:true
+Setting:ClickGUI:Box on settings:true
 State:ESP:false
 Setting:ESP:Mode:Morden
 Setting:ESP:Alpha:0.8
 Setting:ESP:Health Bar:true
 State:Chams:true
 State:Animations:true
-Setting:Animations:Mode:Sigma
-Setting:Animations:Swing Speed:2.3
+Setting:Animations:Mode:Swang
+Setting:Animations:Swing Speed:3.2
 Setting:Animations:Camera Setting:true
 Setting:Animations:X:1.175
 Setting:Animations:Y:-0.1
@@ -320,7 +320,7 @@ Setting:Animations:Scale:0.35
 State:TargetInfo:true
 Setting:TargetInfo:Pos X:554.0
 Setting:TargetInfo:Pos Y:173.0
-Setting:TargetInfo:Mode:Novoline
+Setting:TargetInfo:Mode:Zeroday
 Setting:TargetInfo:Blur Background:true
 Setting:TargetInfo:Drop shadow:true
 Setting:TargetInfo:Font:Sfpro
@@ -354,7 +354,7 @@ Setting:Gui:Blur amount:0.1
 State:SessionInfo:true
 Setting:SessionInfo:Pos X:19.0
 Setting:SessionInfo:Pos Y:126.0
-Setting:SessionInfo:Mode:Blur
+Setting:SessionInfo:Mode:Future
 Setting:SessionInfo:Blur Background:false
 State:Client Cape:true
 Setting:Client Cape:Cape Mode:Acrimony
@@ -367,7 +367,7 @@ Setting:MiniMap:Render Setting:false
 Setting:MiniMap:Players:true
 Setting:MiniMap:Animals:false
 Setting:MiniMap:Mobs:false
-State:Compass:true
+State:Compass:false
 State:BlockCounter:true
 Setting:BlockCounter:Pos X:427.0
 Setting:BlockCounter:Pos Y:240.0
