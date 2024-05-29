@@ -5,11 +5,11 @@ Setting:Killaura:Rotations:Normal
 Setting:Killaura:Random amount:4.0
 Setting:Killaura:Starting range:3.4
 Setting:Killaura:Range:3.25
-Setting:Killaura:Rotation range:4.6
+Setting:Killaura:Rotation range:6.0
 Setting:Killaura:Raycast:Legit
 Setting:Killaura:Attack delay mode:APS
 Setting:Killaura:Min APS:10
-Setting:Killaura:Max APS:13
+Setting:Killaura:Max APS:11
 Setting:Killaura:Attack delay:2
 Setting:Killaura:Fail rate:0
 Setting:Killaura:Hurt time:10
@@ -32,7 +32,8 @@ Setting:Killaura:Animals:false
 Setting:Killaura:Monsters:false
 Setting:Killaura:Invisibles:false
 Setting:Killaura:Attack dead:false
-Setting:Killaura:TargetESP:BOX
+Setting:Killaura:TargetESP:Jello
+Setting:Killaura:RangeESP:true
 State:Velocity:true
 Setting:Velocity:Mode:Ignore horizontal
 Setting:Velocity:Horizontal:0
@@ -75,19 +76,19 @@ Setting:Antibot:Ticks existed:30
 Setting:Antibot:Advanced detection:true
 Setting:Antibot:Debug:false
 State:KeepSprint:true
-State:Auto Pot:true
+State:Auto Pot:false
 Setting:Auto Pot:Delay:250.0
-Setting:Auto Pot:Health:12.0
+Setting:Auto Pot:Health:15.0
 State:Sprint:true
 State:Fly:false
-Setting:Fly:Mode:Hypixel TNT
+Setting:Fly:Mode:Vanilla
 Setting:Fly:Vanilla Mode:Motion
-Setting:Fly:Vanilla speed:3.0
+Setting:Fly:Vanilla speed:1.6
 Setting:Fly:Vanilla vertical speed:2.0
 Setting:Fly:NCP Mode:Old
 Setting:Fly:NCP speed:1.0
 Setting:Fly:Damage:true
-Setting:Fly:Velocity Mode:Wait for hit
+Setting:Fly:Velocity Mode:Bow
 Setting:Fly:Legit:false
 Setting:Fly:Automated:false
 State:Speed:false
@@ -97,25 +98,25 @@ Setting:Speed:Autojump:true
 Setting:Speed:NCP Mode:Hop
 Setting:Speed:Damage Boost:true
 Setting:Speed:Watchdog Mode:Strafeless
-Setting:Speed:Fast:false
-Setting:Speed:Mult:1.24
+Setting:Speed:Fast:true
+Setting:Speed:Mult:1.12
 Setting:Speed:Speed pot mult:1.165
 Setting:Speed:Attribute speed offground:0.023
 Setting:Speed:All directions sprint:true
 Setting:Speed:Min hurttime:10
 Setting:Speed:Sprint:true
-Setting:Speed:Rotate:true
+Setting:Speed:Rotate:false
 Setting:Speed:Ground Strafe:true
-Setting:Speed:Velocity handling:Ignore
-Setting:Speed:Client speed:Custom
+Setting:Speed:Velocity handling:Vertical
+Setting:Speed:Client speed:Normal
 Setting:Speed:Custom client speed:0.325
 Setting:Speed:Fake fly:false
 Setting:Speed:Render box at real pos:true
 Setting:Speed:Timer mode:None
 Setting:Speed:Custom timer:1.0
 State:Inventory Move:false
-Setting:Inventory Move:No sprint:Disabled
-Setting:Inventory Move:Blink:false
+Setting:Inventory Move:No sprint:Enabled
+Setting:Inventory Move:Blink:true
 State:Noslow:true
 Setting:Noslow:Sword method:Watchdog
 Setting:Noslow:Eating method:Hypixel
@@ -151,8 +152,8 @@ Setting:Inventory Manager:Shovel slot:4
 Setting:Inventory Manager:Block stack slot:1
 Setting:Inventory Manager:Golden apples slot:5
 State:Nofall:false
-Setting:Nofall:Mode:Noground
-State:Antivoid:true
+Setting:Nofall:Mode:Packet
+State:Antivoid:false
 Setting:Antivoid:Mode:Blink
 Setting:Antivoid:Stop horizontal move:true
 Setting:Antivoid:Bounce motion:1.5
@@ -163,10 +164,10 @@ State:Fastplace:false
 Setting:Fastplace:Delay:Every tick
 State:AutoTool:true
 Setting:AutoTool:Item spoof:true
-State:SpeedMine:true
+State:SpeedMine:false
 Setting:SpeedMine:speed:1.2
 State:Scaffold:false
-Setting:Scaffold:Mode:Hypixel
+Setting:Scaffold:Mode:Hypixel jump
 Setting:Scaffold:Bypass Mode:Rise/Opal
 Setting:Scaffold:basic-rotations:Movement based
 Setting:Scaffold:No sprint mode:None
@@ -230,7 +231,7 @@ Setting:Scaffold:Apply place delay offground:false
 Setting:Scaffold:Extra right clicks:Dragclick
 Setting:Scaffold:Expand:0
 Setting:Scaffold:Jump:false
-Setting:Scaffold:Hypixel sprint:Semi
+Setting:Scaffold:Hypixel sprint:None
 Setting:Scaffold:Jump to avoid setback:true
 Setting:Scaffold:Hypixel tower:Faster vertically
 Setting:Scaffold:Speed:0.28
@@ -279,9 +280,9 @@ Setting:HUD:Pos Y:8.0
 Setting:HUD:Client WaterMark:true
 Setting:HUD:Mark Mode:Blur mark
 Setting:HUD:Water CFont:SfPro
-Setting:HUD:Client ArrayList:true
+Setting:HUD:Client ArrayList:false
 Setting:HUD:Array Mode:Simple
-Setting:HUD:Array CFont:SfBold
+Setting:HUD:Array CFont:SfPro
 Setting:HUD:Color:Custom Static
 Setting:HUD:R:0.0
 Setting:HUD:G:0.0
@@ -296,26 +297,31 @@ Setting:HUD:Balance:true
 Setting:HUD:Blur Background:false
 Setting:HUD:Nothifications:true
 Setting:HUD:Enable Noti:true
-Setting:HUD:notification mode:Outline
+Setting:HUD:notification mode:Blur
 Setting:HUD:Toggle module Sound:false
 Setting:HUD:Misc setting:false
 State:Color theme:false
-Setting:Color theme:Color:Red
+Setting:Color theme:Color:Acrimony
 Setting:Color theme:ColorSpeed:1830
-Setting:Color theme:Blooms Radius:5
+Setting:Color theme:Red:0
+Setting:Color theme:Green:0
+Setting:Color theme:Blue:255
+Setting:Color theme:Red fade:0
+Setting:Color theme:Green fade:255
+Setting:Color theme:Blue fade:255
 State:ClickGUI:false
 Setting:ClickGUI:Mode:Dropdown
 Setting:ClickGUI:Box on hover:true
 Setting:ClickGUI:Box on settings:true
-State:ESP:false
+State:ESP:true
 Setting:ESP:Mode:Morden
 Setting:ESP:Alpha:0.8
 Setting:ESP:Health Bar:true
 State:Chams:true
 State:Animations:true
-Setting:Animations:Mode:Old
-Setting:Animations:Swing Speed:1.0
-Setting:Animations:Camera Setting:true
+Setting:Animations:Mode:Exhibobo
+Setting:Animations:Swing Speed:2.0
+Setting:Animations:Camera Setting:false
 Setting:Animations:X:1.175
 Setting:Animations:Y:-0.1
 Setting:Animations:Z:-1.2
@@ -323,10 +329,10 @@ Setting:Animations:Scale:1.0
 State:TargetInfo:true
 Setting:TargetInfo:Pos X:554.0
 Setting:TargetInfo:Pos Y:173.0
-Setting:TargetInfo:Mode:Lime Recode
+Setting:TargetInfo:Mode:Acrimony
 Setting:TargetInfo:Blur Background:true
 Setting:TargetInfo:Drop shadow:true
-Setting:TargetInfo:Font:Geist-Bold
+Setting:TargetInfo:Font:Minecraft
 Setting:TargetInfo:Animation:BOUNCE
 Setting:TargetInfo:Animation duration:500
 Setting:TargetInfo:Healh bar delay:450
@@ -335,18 +341,15 @@ State:Keystrokes:false
 Setting:Keystrokes:Pos X:15.0
 Setting:Keystrokes:Pos Y:46.0
 Setting:Keystrokes:Mode:Future
-Setting:Keystrokes:Blur Background:false
 Setting:Keystrokes:Font:Sfprobold
 State:Time Changer:true
 Setting:Time Changer:Custom time:6500.0
 State:Fullbright:true
-State:NameProtect:true
+State:Arrows:false
+Setting:Arrows:Radius:30.0
+Setting:Arrows:Opacity:50.0
+State:NameProtect:false
 State:Xray:false
-State:GlowESP:false
-Setting:GlowESP:Radius:4.0
-Setting:GlowESP:Exposure:4.0
-Setting:GlowESP:Seperate Texture:false
-Setting:GlowESP:Static White:true
 State:Gui:true
 Setting:Gui:Inventory:Default
 Setting:Gui:Disable HurtCam:true
@@ -354,36 +357,36 @@ Setting:Gui:Clear Chat:true
 Setting:Gui:Item Physics:true
 Setting:Gui:Fancy Scoreboard:false
 Setting:Gui:Enable MotionBlur:false
-Setting:Gui:Blur amount:0.1
-State:SessionInfo:true
+Setting:Gui:Blur amount:1.0
+State:SessionInfo:false
 Setting:SessionInfo:Pos X:19.0
 Setting:SessionInfo:Pos Y:126.0
 Setting:SessionInfo:Mode:Future
-Setting:SessionInfo:Blur Background:false
 State:Client Cape:true
 Setting:Client Cape:Cape Mode:Acrimony
-State:MiniMap:true
+State:MiniMap:false
 Setting:MiniMap:Pos X:24.0
 Setting:MiniMap:Pos Y:202.0
-Setting:MiniMap:Mode:Blur
-Setting:MiniMap:Blur Background:false
+Setting:MiniMap:Mode:Future
 Setting:MiniMap:Render Setting:false
 Setting:MiniMap:Players:true
 Setting:MiniMap:Animals:false
 Setting:MiniMap:Mobs:false
-State:Compass:false
+State:Inventory Display:false
+Setting:Inventory Display:Pos X:427.0
+Setting:Inventory Display:Pos Y:240.0
+State:Compass:true
 State:BlockCounter:true
 Setting:BlockCounter:Pos X:427.0
 Setting:BlockCounter:Pos Y:240.0
 Setting:BlockCounter:Mode:Acrimony
-Setting:BlockCounter:Blur Background:false
 Setting:BlockCounter:Animation:POP
 Setting:BlockCounter:Animation duration:350
-State:TNTTime:false
-State:NetInfo:false
-Setting:NetInfo:Pos X:24.0
-Setting:NetInfo:Pos Y:204.0
-Setting:NetInfo:Update Speed:100.0
+Setting:BlockCounter:3D Scaffold Mark:true
+State:Speedometer:false
+Setting:Speedometer:Pos X:427.0
+Setting:Speedometer:Pos Y:240.0
+Setting:Speedometer:Delay:20.0
 State:Autoplay:true
 Setting:Autoplay:Mode:Solo normal
 Setting:Autoplay:Delay:1500
@@ -391,7 +394,7 @@ State:Self Destruct:false
 State:FakePlayer:false
 State:Update Config:false
 State:Disabler:false
-Setting:Disabler:Mode:Vulcan Move
+Setting:Disabler:Mode:Watchdog inventory
 Setting:Disabler:Strict:false
 Setting:Disabler:Blink ticks:10
 Setting:Disabler:Delay:500
